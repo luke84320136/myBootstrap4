@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+  <title>時間軸範例</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .box {
+      height: 100px;
+      background-color: #7952b3;
+      border: 1px solid white;
+    }
+
+    .timeline-section {
+      position: relative;
+    }
+
+    /* :after 偽元素 */
+
+    .timeline-section:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 5px;
+      /* 線調回中央 */
+      transform: translateX(-50%);
+      background-color: #ccc;
+    }
+
+    .timeline-pointer {
+      position: relative;
+    }
+
+    .timeline-pointer:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      transform: translateX(-50%);
+      border: 3px solid #ccc;
+      border-radius: 50%;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+      .timeline-section:after,
+      .timeline-pointer:after {
+        display: none;
+      }
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="timeline-section">
+      <div class="row my-3 timeline-pointer">
+        <div class="col-sm-6">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae esse voluptate consectetur accusantium,
+            est odit voluptatum dolore non tempore, modi libero quas ducimus dignissimos nobis? Molestias assumenda voluptas
+            distinctio.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nam soluta repudiandae quisquam sit. Distinctio
+            a, quia ratione, facere nemo ut adipisci ipsum delectus impedit voluptas, iusto hic aut doloribus!</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row my-3 flex-sm-row-reverse timeline-pointer">
+        <div class="col-sm-6">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae esse voluptate consectetur accusantium,
+            est odit voluptatum dolore non tempore, modi libero quas ducimus dignissimos nobis? Molestias assumenda voluptas
+            distinctio.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nam soluta repudiandae quisquam sit. Distinctio
+            a, quia ratione, facere nemo ut adipisci ipsum delectus impedit voluptas, iusto hic aut doloribus!</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row my-3 timeline-pointer">
+        <div class="col-sm-6">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae esse voluptate consectetur accusantium,
+            est odit voluptatum dolore non tempore, modi libero quas ducimus dignissimos nobis? Molestias assumenda voluptas
+            distinctio.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nam soluta repudiandae quisquam sit. Distinctio
+            a, quia ratione, facere nemo ut adipisci ipsum delectus impedit voluptas, iusto hic aut doloribus!</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row my-3 flex-sm-row-reverse timeline-pointer">
+        <div class="col-sm-6">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae esse voluptate consectetur accusantium,
+            est odit voluptatum dolore non tempore, modi libero quas ducimus dignissimos nobis? Molestias assumenda voluptas
+            distinctio.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nam soluta repudiandae quisquam sit. Distinctio
+            a, quia ratione, facere nemo ut adipisci ipsum delectus impedit voluptas, iusto hic aut doloribus!</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row my-3 timeline-pointer">
+        <div class="col-sm-6">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae esse voluptate consectetur accusantium,
+            est odit voluptatum dolore non tempore, modi libero quas ducimus dignissimos nobis? Molestias assumenda voluptas
+            distinctio.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nam soluta repudiandae quisquam sit. Distinctio
+            a, quia ratione, facere nemo ut adipisci ipsum delectus impedit voluptas, iusto hic aut doloribus!</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

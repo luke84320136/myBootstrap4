@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>flex & grid</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <style>
+    .box {
+      height: 100px;
+      background-color: #7952b3;
+      border: 1px solid white;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-3">
+    <p class="display-4">flex-direction</p>
+    <hr>
+    <div class="row flex-row">
+      <div class="col-3">
+        <div class="box">1</div>
+      </div>
+      <div class="col-3">
+        <div class="box">2</div>
+      </div>
+    </div>
+    <div class="row flex-row-reverse">
+      <div class="col-3">
+        <div class="box">1</div>
+      </div>
+      <div class="col-3">
+        <div class="box">2</div>
+      </div>
+    </div>
+    <div class="row flex-column-reverse">
+      <div class="col-3">
+        <div class="box">1</div>
+      </div>
+      <div class="col-3">
+        <div class="box">2</div>
+      </div>
+    </div>
+    <hr>
+    <p class="display-4">justify-content</p>
+    <div class="row justify-content-between">
+      <div class="col-3">
+        <div class="box">1</div>
+      </div>
+      <div class="col-3">
+        <div class="box">2</div>
+      </div>
+    </div>
+    <hr>
+    <div class="row flex-column align-items-center">
+      <div class="col-6 align-self-start">
+        <div class="box"></div>
+      </div>
+      <div class="col-6">
+        <div class="box"></div>
+      </div>
+      <div class="col-6 align-self-baseline">
+        <div class="box"></div>
+      </div>
+      <div class="col-6">
+        <div class="box"></div>
+      </div>
+      <div class="col-6 align-self-end">
+        <div class="box"></div>
+      </div> 
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
