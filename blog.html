@@ -9,13 +9,22 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .breadcrumb {
+      background-color: transparent;
+    }
+
+    .text-hexschool {
+      color: #00cc99 !important;
+    }
+  </style>
   <title>Blog 實作</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00cc99">
     <a class="navbar-brand" href="#">
-        <i class="fa fa-diamond" aria-hidden="true"></i>
+      <i class="fa fa-diamond" aria-hidden="true"></i>
       六角部落格
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -35,6 +44,82 @@
       </ul>
     </div>
   </nav>
+  <!-- 麵包屑 -->
+  <div class="container">
+    <ol class="breadcrumb pl-0">
+      <li class="breadcrumb-item">
+        <a href="#" class="text-hexschool">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-hexschool">Library</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+    <h1 class="text-hexschool">Bootstrap 4繁體中文手冊</h1>
+    <!--上方icon -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="my-3 text-secondary">
+          <small>
+            <span class="mr-4">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              路克藍</span>
+            <span class="mr-4">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              2018/1/24</span>
+            <span class="mr-4">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              測試demo</span>
+          </small>
+        </div>
+        <!-- 文章內容 -->
+        <article>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium vel ex similique fugit eius rem. Amet
+            odio dicta, hic perferendis totam rerum? Adipisci explicabo natus, deserunt laudantium repellendus eos?</p>
+          <h2 class="text-secondary">Bootstrap 4 特色</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequatur veniam maiores dignissimos necessitatibus,
+            eos accusantium natus earum dolor cupiditate laboriosam numquam, ad facere corporis rem quisquam? Iure, odit
+            dolores.</p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
+              <code>float</code> architecto!</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
+              <code>flex</code>architecto!</li>
+          </ul>
+          <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2"
+            alt="bootstrap logo">
+        </article>
+
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h2 class="text-secondary">Tags</h2>
+
+        <a href="#" class="badge badge-info">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          Bootstrap 4</a>
+        <a href="#" class="badge badge-info">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          Node.js</a>
+        <a href="#" class="badge badge-info">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          Vue.js</a>
+        <a href="#" class="badge badge-info">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          front-end</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
