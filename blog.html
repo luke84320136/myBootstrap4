@@ -2,11 +2,9 @@
 <html lang="zh-Hang-TW">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -44,19 +42,17 @@
       </ul>
     </div>
   </nav>
-  <!-- 麵包屑 -->
   <div class="container">
     <ol class="breadcrumb pl-0">
       <li class="breadcrumb-item">
         <a href="#" class="text-hexschool">Home</a>
       </li>
       <li class="breadcrumb-item">
-        <a href="#" class="text-hexschool">Library</a>
+        <a href="#" class="text-hexschool">部落格</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Data</li>
+      <li class="breadcrumb-item active" aria-current="page">Bootstrap 4</li>
     </ol>
     <h1 class="text-hexschool">Bootstrap 4繁體中文手冊</h1>
-    <!--上方icon -->
     <div class="row">
       <div class="col-md-8">
         <div class="my-3 text-secondary">
@@ -72,56 +68,97 @@
               測試demo</span>
           </small>
         </div>
-        <!-- 文章內容 -->
         <article>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium vel ex similique fugit eius rem. Amet
-            odio dicta, hic perferendis totam rerum? Adipisci explicabo natus, deserunt laudantium repellendus eos?</p>
+          <p class="text-justify">Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個 Star)。如今第四版 Beta
+            (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！</p>
           <h2 class="text-secondary">Bootstrap 4 特色</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequatur veniam maiores dignissimos necessitatibus,
-            eos accusantium natus earum dolor cupiditate laboriosam numquam, ad facere corporis rem quisquam? Iure, odit
-            dolores.
-          </p>
+          <p class="text-justify">Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha 的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：</p>
           <ul>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
-              <code>float</code> architecto!</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
-              <code>flex</code>architecto!</li>
+            <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass 囉！</li>
+            <li>Flexbox 以及強化的網格系統: 網格系統不在使用
+              <code>float</code>，進而改用
+              <code>flexbox</code>，讓行動裝置及桌面裝置有更彈性的排版方法。</li>
+            <li>卡片元件: 許多元件本質相似度較高，如
+              <code>wells</code>、
+              <code>thumbnails</code>、
+              <code>panels</code> 等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li>
+            <li>彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass
+              <code>$map</code> 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。</li>
+            <li>IE8、IE9 掰掰: 放棄舊有的瀏覽器支持，讓元件的使用及開發上更為容易，如果還是考慮支援 IE8/IE9、 Safari 8-、 iOS 8- 可以繼續使用 Bootstrap 3。</li>
+            <li>重新設計說明文件: 新的文件重新設計了，並且加入一些插件讓搜尋上更為容易！</li>
+            <li>更多的改變: 重新設計更多更多的樣式，像是自由套色的導覽列、HTML5 的驗證樣式、嶄新的輪播以及許多的元件</li>
           </ul>
+          <h2 class="text-secondary">繁體中文手冊</h2>
+          <p class="text-justify">加入了這麼多新功能，如果從頭開始了解原文版本也需要花上不少時間，於是六角學院從兩個月前開始著手翻譯，在正式釋出 Beta 版後的兩個工作日釋出繁體中文手冊，讓對於 Bootstrap 有需求的同學可以加速上手～</p>
           <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2"
             alt="bootstrap logo">
+          <p class="text-justify">如果你期待六角學院的 Bootstrap 相關課程，也可以透過以下連結或加入我們的
+            <a href="https://goo.gl/reck6p" class="text-hexschool">LINE</a>，等待課程釋出的同時也會通知您喔！</p>
         </article>
-        <!-- 留言區 -->
-        <div class="card">
+        <div class="card mb-1">
           <div class="card-header">
             留言區
           </div>
           <div class="card-body">
-            <div class="media mb-4">
-              <img class="mr-3" src="https://randomuser.me/api/portraits/men/51.jpg" width="64px" height="64px" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0">路克藍</h5>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
-                  <button class="btn btn-light btn-block mt-2">送出</button>
+            <ul class="list-unstyled">
+              <li>
+                <div class="media mb-3">
+                  <img class="mr-3" src="https://randomuser.me/api/portraits/men/51.jpg" style="width:64px; height:64px" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="text-info mt-0">LukeLan</h5>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" placeholder="填下您寶貴的意見"></textarea>
+                      <button class="btn btn-light btn-block mt-2">送出</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="media">
-              <img class="mr-3" src="https://randomuser.me/api/portraits/women/34.jpg" width="64px" height="64px" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
-                felis in faucibus.
-              </div>
-            </div>
+              </li>
+              <li>
+                <div class="media mb-3">
+                  <img class="mr-3" src="https://randomuser.me/api/portraits/women/34.jpg" style="width:64px; height:64px" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0">正妹一號</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                    vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                    congue felis in faucibus.
+                    <p class="text-secondary">
+                      <small>about 5 hours ago</small>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media mb-3">
+                  <img class="mr-3" src="https://randomuser.me/api/portraits/men/93.jpg" style="width:64px; height:64px" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0">帥哥一號</h5>
+                    有錢就是任性
+                    <p class="text-secondary">
+                      <small>about 10 hours ago</small>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media mb-3">
+                  <img class="mr-3" src="https://randomuser.me/api/portraits/women/44.jpg" style="width:64px; height:64px" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0">正妹二號</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                    vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                    congue felis in faucibus.
+                    <p class="text-secondary">
+                      <small>about 15 hours ago</small>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
       <div class="col-md-4">
         <h2 class="text-secondary">Tags</h2>
-
         <a href="#" class="badge badge-info">
           <i class="fa fa-tag" aria-hidden="true"></i>
           Bootstrap 4</a>
@@ -139,15 +176,17 @@
   </div>
   <footer class="bg-light py-4 mt-3 ">
     <div class="container d-flex justify-content-between">
-      <div> &copy; &nbsp; Copyright &nbsp; 2017 &nbsp; LukeLan</div>
-      <div>
-        <a href="#" class="text-hexschool"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-        <a href="#" class="text-hexschool"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-      </div>
+      <div>&copy;&nbsp;Copyright&nbsp;2017&nbsp;LukeLan</div>
+      <section id="icons">
+        <a href="#" class="text-hexschool">
+          <i class="fa facebook fa-facebook-official fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="text-hexschool">
+          <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+        </a>
+      </section>
     </div>
   </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
