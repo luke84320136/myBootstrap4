@@ -14,6 +14,6 @@ flex-row, flex-column
 - align-self, 單一物件交錯軸對齊
 - justify-content,主要軸線對齊
 - order, 排序順序
-- d-flex,不會加上flex-wrap
+- d-flex,不需加上flex-wrap
 
 詳細課程：精通 Bootstrap 4 - 開發超強不解釋https://goo.gl/b9uG6b
