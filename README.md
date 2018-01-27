@@ -6,7 +6,7 @@
 外層、內層屬性
 - 對齊方法
 
-* Flex概念
+＊Flex概念
 - flex direction,決定flex軸線(EX:上->下)
 flex-row, flex-column
 - display,必備屬性
