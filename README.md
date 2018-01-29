@@ -6,14 +6,13 @@
 外層、內層屬性
 - 對齊方法
 
-＊Flex概念
-- flex direction,決定flex軸線(EX:上->下)
-flex-row, flex-column
-- display,必備屬性
-- align-items 交錯軸對齊
-- align-self, 單一物件交錯軸對齊
-- justify-content,主要軸線對齊
-- order, 排序順序
-- d-flex,不需加上flex-wrap
+＊Flex對齊方法
+- flex-direction: row(default)
+- flex-direction: row-reverse
+- flex-direction: column
+- flex-direction: column-reverse
+- justify-content, 依據主軸的軸線決定item間隔方法 
+- align-items, 垂直對齊主軸的方法
+- align-self, item本身垂直對齊主軸的方法
 
 詳細課程：精通 Bootstrap 4 - 開發超強不解釋https://goo.gl/b9uG6b
