@@ -22,6 +22,10 @@
       background-position: center center;
     }
 
+    .form-control {
+      border-width: 2px;
+    }
+
     .carousel-caption {
       background-color: rgba(0, 0, 0, .6);
     }
@@ -82,8 +86,8 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <a href="#" class="btn btn-outline-primary mr-3">登入</a>
-          <a href="#" class="btn btn-primary">註冊</a>
+          <a href="#" class="btn btn-outline-primary mr-3 " data-toggle="modal" data-target="#loginModal">登入</a>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">註冊</a>
         </form>
       </div>
     </div>
@@ -136,7 +140,7 @@
             <i class="fa fa-hourglass-start fa-3x" aria-hidden="true"></i>
           </div>
           <h3>忘卻不了的莓果香</h3>
-          <hr width="0%">
+          <br>
           <p class="text-justify">沒有遺憾的愛過、支持過他們，在商言商，他們總是假設：喔，但相信我。可是已經晚了……請你以後不要在我面前說英文了。</p>
         </div>
         <div class="col-md-4 text-center">
@@ -144,7 +148,7 @@
             <i class="fa fa-cutlery fa-3x" aria-hidden="true"></i>
           </div>
           <h3>積沈在心中的漣漪</h3>
-          <hr width="0%">
+          <br>
           <p class="text-justify">但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
         </div>
         <div class="col-md-4 text-center">
@@ -152,7 +156,7 @@
             <i class="fa fa-apple fa-3x" aria-hidden="true"></i>
           </div>
           <h3>放不下的體脂肪</h3>
-          <hr width="0%">
+          <br>
           <p class="text-justify">那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
         </div>
       </div>
@@ -277,25 +281,28 @@
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="col-md-6">
-          <form>
+          <form action="" class="needs-validation" novalidate>
             <div class="form-group">
               <label for="userName">姓名*</label>
-              <input type="text" class="form-control" id="userName" placeholder="請輸入姓名">
+              <input type="text" class="form-control" id="userName" placeholder="請輸入姓名" required>
+              <div class="invalid-feedback">
+                請輸入姓名!
+              </div>
             </div>
             <div class="form-group">
               <label for="tel">電話*</label>
-              <input type="tel" class="form-control" id="tel" placeholder="請輸入電話">
+              <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" required>
             </div>
             <div class="form-group">
               <label for="email">E-mail*</label>
-              <input type="email" class="form-control" id="email" placeholder="example@emil.com">
+              <input type="email" class="form-control" id="email" placeholder="example@emil.com" required>
             </div>
             <div class="form-group">
               <label for="number">人數*</label>
-              <input type="number" class="form-control" id="number" value="2" placeholder="請輸入人數">
+              <input type="number" class="form-control" id="number" value="2" placeholder="請輸入人數" min="0" required>
             </div>
             <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" required>
               <label class="custom-control-label" for="customRadio1">需要素食</label>
             </div>
             <div class="custom-control custom-radio">
@@ -307,15 +314,110 @@
               <button type="submit" class="btn btn-primary">送出</button>
             </div>
           </form>
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+              'use strict';
+              window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+          </script>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 bg-cover p-5 text-white" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+        <div class="row">
+          <div class="col-md-9">
+            <small>加入我們</small>
+            <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+            <p class="text-justify">短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+            <a href="#" class="btn btn-outline-warning">加入我們</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 bg-cover p-5 text-white" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+        <div class="row">
+          <div class="col-md-9">
+            <small>品嚐佳餚</small>
+            <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+            <p class="text-justify">一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
+            <a href="#" class="btn btn-outline-warning">品嚐佳餚</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-light py-4 mt-3 ">
+    <div class="container d-flex justify-content-between">
+      <div>&copy;&nbsp;Copyright&nbsp;2017&nbsp;LukeLan
+        <a href="https://github.com/luke84320136" target="_blank">Github</a>
+        <a href="https://facebook.com" target="_blank">FB</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切換至註冊</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切換至登入</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script>
     $('.carousel').carousel({
       interval: 4500,
