@@ -366,14 +366,13 @@
   <footer class="bg-light py-4 mt-3 ">
     <div class="container d-flex justify-content-between">
       <div>&copy;&nbsp;Copyright&nbsp;2017&nbsp;LukeLan
-        <a href="https://github.com/luke84320136" target="_blank">Github</a>
-        <a href="https://facebook.com" target="_blank">FB</a>
-        <a href="#">About</a>
+        <a href="https://github.com/luke84320136" class="ml-4" target="_blank">Github</a>
+        <a href="https://facebook.com" class="ml-2" target="_blank">FB</a>
+        <a href="#" class="ml-2">About</a>
       </div>
     </div>
   </footer>
 
-  <!-- Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -384,7 +383,22 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <form>
+            <div class="form-group">
+              <label for="account">帳號*</label>
+              <input type="email" class="form-control" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號...">
+            </div>
+            <div class="form-group">
+              <label for="password">密碼*</label>
+              <input type="password" class="form-control" id="password" placeholder="請輸入密碼...">
+            </div>
+            <div class="form-check pl-0">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">記住帳號</label>
+              </div>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切換至註冊</a>
@@ -394,9 +408,9 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
+
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning text-white">
           <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
@@ -405,12 +419,46 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>註冊六角西餐廳</h2>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error neque sint dicta inventore quas consequuntur
+                  ducimus. Distinctio asperiores nisi a suscipit. Repellendus sequi expedita fuga assumenda dolorem voluptatibus
+                  quia.</p>
+                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure libero reiciendis sint beatae ratione
+                  quaerat? Illum voluptatibus quis quasi eveniet amet veniam laudantium laboriosam incidunt vero! Similique,
+                  libero delectus.</p>
+              </div>
+              <div class="col-md-6">
+                <form>
+                  <div class="form-group">
+                    <label for="account">帳號*</label>
+                    <input type="email" class="form-control" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號...">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">密碼*</label>
+                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼...">
+                  </div>
+                  <div class="form-group">
+                    <label for="password1">確認密碼*</label>
+                    <input type="password" class="form-control" id="password1" placeholder="請重新輸入密碼...">
+                  </div>
+                  <div class="form-check pl-0">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">同意條款</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切換至登入</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
