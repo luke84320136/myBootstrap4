@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
 <head>
@@ -425,7 +425,8 @@
                 <h2>註冊六角西餐廳</h2>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error neque sint dicta inventore quas consequuntur
                   ducimus. Distinctio asperiores nisi a suscipit. Repellendus sequi expedita fuga assumenda dolorem voluptatibus
-                  quia.</p>
+                  quia.
+                </p>
                 <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure libero reiciendis sint beatae ratione
                   quaerat? Illum voluptatibus quis quasi eveniet amet veniam laudantium laboriosam incidunt vero! Similique,
                   libero delectus.</p>
@@ -469,6 +470,19 @@
   <script>
     $('.carousel').carousel({
       interval: 4500,
+    })
+  </script>
+  <script>
+    $(document).ready(function () {
+      console.log('ready')
+      $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function () {
+        console.log('click')
+        var target = $(this).data('target')
+        console.log('target', target)
+        $(target).on('shown.bs.modal', function () {
+          $('body').addClass('modal-open')
+        })
+      })
     })
   </script>
 </body>
